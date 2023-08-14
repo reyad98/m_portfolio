@@ -1,0 +1,174 @@
+.maincontainer {
+  background-color: #ecf0f1;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 20px;
+}
+.twocontainer {
+  display: flex;
+  padding: 0 40px;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.problem_container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%; /* Take 60% of the container width */
+  padding: 11px;
+}
+
+.container2 {
+  border: 1px dotted rgb(168, 168, 168);
+  display: flex;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.144);
+
+  border-radius: 5px;
+  flex-direction: column;
+  width: 40%; /* Take 40% of the width */
+  background-color: #ecf0f1; /* Example background color */
+}
+
+.left-container,
+.right-container {
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* Each container takes 50% of the width */
+}
+
+.problemsolving {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.problemsolving p {
+  padding: 10px;
+}
+
+.box-4,
+.box-2 {
+  border-radius: 3px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.2s;
+
+  height: calc(
+    50% - 5px
+  ); /* Half of the container height, minus margins and padding */
+}
+
+.box-2:hover {
+  transform: translateY(-3px);
+}
+.box-4:hover {
+  transform: translateY(-3px);
+}
+
+.box-4 p {
+  margin: 0;
+}
+
+.box-4 p {
+  padding: 2px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.left-container .box-4 {
+  margin-bottom: 5px;
+}
+
+.right-container .box-2 {
+  margin-bottom: 5px;
+}
+
+.b1 {
+  background-color: #ace7c2; /* Example color */
+  color: rgb(18, 100, 42); /* Text color to contrast with background */
+}
+
+.b2 {
+  background-color: #d1a5d4; /* Example color */
+  color: #61236c;
+}
+
+.b3 {
+  background-color: #cecece; /* Example color */
+  color: #606060;
+}
+
+.b4 {
+  background-color: #a9ded9; /* Example color */
+  color: #2a5f62;
+}
+
+.b5 {
+  background-color: #f2d1be; /* Example color */
+  color: #784a40;
+}
+
+.b6 {
+  background-color: #f5cbdc; /* Example color */
+  color: #af446f;
+}
+
+.b7 {
+  /* ... Your existing styles ... */
+  padding: 20px;
+  text-align: center;
+}
+
+.lines {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: white;
+}
+
+.b7 p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .maincontainer {
+    margin-top: 30px;
+    padding: 5px;
+  }
+  .twocontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    width: 90%;
+  }
+
+  .problem_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Take 60% of the container width */
+  }
+
+  .left-container,
+  .right-container {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 90%; /* Each container takes 50% of the width */
+  }
+
+  .container2 {
+    width: 99%;
+    margin-bottom: 20px;
+  }
+}

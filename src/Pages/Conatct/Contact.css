@@ -1,0 +1,136 @@
+/* Contact.css */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.contact_cont {
+  width: 80%;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: #fff5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.224);
+}
+
+.contact-form {
+  width: 50%;
+  padding: 20px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.contact-form h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #535353;
+}
+
+.contact-form p {
+  margin-bottom: 20px;
+}
+
+.contact-info-column {
+  flex: 1;
+  margin-right: 0px;
+}
+.contact-info-column p {
+  font-size: 14px;
+}
+
+/* Modify the .contact-details class */
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-details h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #5b5b5b;
+  margin: 0px;
+}
+.contact-details p {
+  width: 50%;
+}
+
+.contact-details p:last-child {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="subject"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none; /* Remove the border */
+  border-bottom: 1px solid #7e2a2a9d; /* Add a bottom border for the single-line appearance */
+  background-color: transparent; /* Set a transparent background */
+  margin-bottom: 10px; /* Add some spacing between input fields */
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="subject"]:focus,
+textarea:focus {
+  outline: none; /* Remove the default focus outline */
+  border-bottom: 2px solid #333; /* Add a customized bottom border on focus */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffa2a2;
+  color: #7a0000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+  height: 40px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #800000;
+  color: #ffa5a5;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 24px;
+  transition: transform 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.contact-image {
+  width: 50%;
+  text-align: right;
+}
+
+.contact-image img {
+  max-width: 100%;
+  max-height: 500px;
+  border-radius: 0px 10px 10px 0px;
+  object-fit: cover;
+  margin-bottom: -3px;
+}
