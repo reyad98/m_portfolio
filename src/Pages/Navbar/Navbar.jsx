@@ -1,37 +1,51 @@
 import React, { useState } from "react";
-import { FaCode, FaEnvelope, FaHome, FaUser } from "react-icons/fa"; // Import the Fa icons
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setMenuOpen(!menuOpen);
   };
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">Logo</div>
-      <div className={`navbar-links ${isOpen ? "active" : ""}`}>
-        <Link to="/" onClick={toggleMenu}>
-          <FaHome className="icon" /> Home
-        </Link>
-        <Link to="/about" onClick={toggleMenu}>
-          <FaUser /> About
-        </Link>
-        <Link to="/projects" onClick={toggleMenu}>
-          <FaCode className="icon" /> Projects
-        </Link>
-        <Link to="/contact" onClick={toggleMenu}>
-          <FaEnvelope className="icon" /> Contact
-        </Link>
+      <div className="logo">
+        ANISUR RAHMAN <span className="logo_reyad">REYAD</span>
       </div>
-      <div className={`hamburger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
-        <div className="line" />
-        <div className="line" />
-        <div className="line" />
+      <div className={`menu ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
       </div>
+      <ul className={`nav-items ${menuOpen ? "open" : ""}`}>
+        <li className="nav-item">
+          <Link to="/" className="nav-link">
+            Home
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/about" className="nav-link">
+            About
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/projects" className="nav-link">
+            Projects
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/hobbies" className="nav-link">
+            Hobbies
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/contact" className="nav-link">
+            Contact
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 };

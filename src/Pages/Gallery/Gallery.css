@@ -1,0 +1,135 @@
+.top_gallery {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.top_gallery h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: rgb(91, 91, 91);
+}
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Adjust the width as needed */
+}
+
+.cards__item {
+  display: flex;
+  width: 25%; /* Display 3 cards in one row */
+  padding: 0.6rem;
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid gray;
+  color: var(--gray-dark);
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card:hover .card__image {
+  filter: contrast(100%);
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(100%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.card__title {
+  color: var(--gray-dark);
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Adjust the width as needed */
+  }
+
+  .cards__item {
+    display: flex;
+    width: 100%; /* Display 3 cards in one row */
+  }
+}

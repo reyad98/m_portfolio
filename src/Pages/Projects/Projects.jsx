@@ -1,50 +1,74 @@
+// Projects.js
 import React from "react";
-import "./Projects.css";
-
-const projectsData = [
-  {
-    title: "Project 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    imageUrl: "/images/project1.jpg", // Replace with your image URL
-  },
-  {
-    title: "Project 2",
-    description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    imageUrl: "/images/project2.jpg", // Replace with your image URL
-  },
-  {
-    title: "Project 3",
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    imageUrl: "/images/project3.jpg", // Replace with your image URL
-  },
-  {
-    title: "Project 4",
-    description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    imageUrl: "/images/project4.jpg", // Replace with your image URL
-  },
-  {
-    title: "Project 5",
-    description:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-    imageUrl: "/images/project5.jpg", // Replace with your image URL
-  },
-];
+import { FaCalendarAlt } from "react-icons/fa"; // Import React Icons
+import project3 from "../images/cropped-projects4.png";
+import project1 from "../images/project11.jpg";
+import project2 from "../images/project2.jpg";
+import project4 from "../images/project55.png";
+import "./Projects.css"; // Import your CSS file
 
 const Projects = ({ limit }) => {
-  const projectsToShow = limit ? projectsData.slice(0, limit) : projectsData;
+  const demoProjects = [
+    {
+      id: 1,
+      image: project1, // Replace with actual image source
+      date: "June 2022",
+      title: "Project 1",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      technology: "React, Node.js, MongoDB",
+    },
+    {
+      id: 2,
+      image: project3, // Replace with actual image source
+      date: "July 2022",
+      title: "Project 2",
+      description:
+        "Pellentesque  5656 ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus cursus luctus. lorem20  Pellentesque ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus Pellentesque ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus Pellentesque ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus Pellentesque tyty ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus ",
+      technology: "Angular, Express.js, PostgreSQL",
+    },
+    {
+      id: 3,
+      image: project4, // Replace with actual image source
+      date: "June 2022",
+      title: "Project 1",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      technology: "React, Node.js, MongoDB",
+    },
+    {
+      id: 4,
+      image: project2, // Replace with actual image source
+      date: "July 2022",
+      title: "Project 2",
+      description:
+        "Pellentesque  5656 ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus cursus luctus. lorem20  Pellentesque ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus Pellentesque ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus Pellentesque ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus Pellentesque tyty ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus ",
+      technology: "Angular, Express.js, PostgreSQL",
+    },
+    // Add more project objects as needed
+  ];
 
   return (
-    <div className="projects-container">
-      <div className="projects-grid">
-        {projectsToShow.map((project, index) => (
-          <div key={index} className="project-card">
-            <img src={project.imageUrl} alt={`Project ${index + 1}`} />
+    <div className="projects">
+      <h2 className="section-title">MY PROJECTS</h2>
+      <div className="project-list">
+        {demoProjects.slice(0, limit).map((project) => (
+          <div key={project.id} className="project-card">
+            <div className="project-image-container">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+              />
+            </div>
             <div className="project-info">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
+              <div className="project-date">
+                <FaCalendarAlt /> {project.date}
+              </div>
+              <h3 className="project-title">{project.title}</h3>
+              <p className="project-description">{project.description}</p>
+              <p className="project-technology">
+                <strong>Used Technology:</strong> {project.technology}
+              </p>
+              <button className="read-more-button">Live Site</button>
             </div>
           </div>
         ))}

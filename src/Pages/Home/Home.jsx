@@ -6,8 +6,10 @@ import {
   FaLinkedin,
   FaYoutube,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import Contact from "../Conatct/Contact";
 import Education from "../Education/Education";
+import Gallery from "../Gallery/Gallery";
 import Projects from "../Projects/Projects";
 import img1 from "../images/img1.jpg";
 import "./Home.css";
@@ -92,9 +94,21 @@ const Home = () => {
         <Skills></Skills>
       </div>
       <ProblemSolving></ProblemSolving>
-      <Education></Education>
       <Projects limit={3} />
+
+      <div className="more_projects">
+        <div></div>
+        <div>
+          <Link to="/projects">
+            {" "}
+            <button className="more_btn">Show More Projects {">>"}</button>{" "}
+          </Link>
+        </div>
+      </div>
+
+      <Education></Education>
       <Contact></Contact>
+      <Gallery></Gallery>
     </div>
   );
 };

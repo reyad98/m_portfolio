@@ -29,11 +29,11 @@ html {
 }
 
 .timeline ul li {
-  padding: 20px;
+  padding: 10px;
   background-color: #1e1f22;
   color: white;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   box-sizing: border-box;
 }
 

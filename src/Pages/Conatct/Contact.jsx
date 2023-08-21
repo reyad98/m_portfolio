@@ -1,38 +1,57 @@
 import React from "react";
-import { FaDribbble, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import contactImage from "../images/food2.jpg"; // Import your contact image
-import "./Contact.css";
+import "./Contact.css"; // Your CSS for styling
 
 const Contact = () => {
-  const handleSendEmail = () => {
-    alert("Email sent!"); // Simulating sending an email
-  };
-
   return (
-    <div className="contact-container">
-      <div className="contact_cont">
-        <div className="contact-form">
-          <h2>Get In Touch</h2>
-          <p>We're open for any suggestion or just to have a chat</p>
-
-          <form>
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <input type="text" placeholder="Subject" />
-            <textarea placeholder="Create a message here"></textarea>
-            <button type="button" onClick={handleSendEmail}>
-              Send
-            </button>
-          </form>
-          <div className="social-icons">
-            <FaFacebook className="social-icon" />
-            <FaTwitter className="social-icon" />
-            <FaInstagram className="social-icon" />
-            <FaDribbble className="social-icon" />
+    <div className="contact_background">
+      <div className="contact_container">
+        <div className="screen">
+          <div className="screen-header">
+            <div className="screen-header-left">
+              <div className="screen-header-button close"></div>
+              <div className="screen-header-button maximize"></div>
+              <div className="screen-header-button minimize"></div>
+            </div>
+            <div className="screen-header-right">
+              <div className="screen-header-ellipsis"></div>
+              <div className="screen-header-ellipsis"></div>
+              <div className="screen-header-ellipsis"></div>
+            </div>
           </div>
-        </div>
-        <div className="contact-image">
-          <img src={contactImage} alt="Contact" />
+          <div className="screen-body">
+            <div className="screen-body-item left">
+              <div className="app-title">
+                <span>GET IN </span>
+                <span>TOUCH</span>
+              </div>
+              <div className="app-contact">
+                CONTACT INFO : +880 13 176 000 166
+              </div>
+            </div>
+            <div className="screen-body-item">
+              <div className="app-form">
+                <div className="app-form-group">
+                  <input className="app-form-control" placeholder="NAME" />
+                </div>
+                <div className="app-form-group">
+                  <input className="app-form-control" placeholder="EMAIL" />
+                </div>
+                <div className="app-form-group">
+                  <input
+                    className="app-form-control"
+                    placeholder="CONTACT NO"
+                  />
+                </div>
+                <div className="app-form-group message">
+                  <input className="app-form-control" placeholder="MESSAGE" />
+                </div>
+                <div className="app-form-group buttons">
+                  <button className="app-form-button">CANCEL</button>
+                  <button className="app-form-button">SEND</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
