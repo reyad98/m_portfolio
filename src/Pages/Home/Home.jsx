@@ -65,7 +65,7 @@ const Home = () => {
             </div>
             <div className="download">
               <a
-                href="path/to/your/resume.pdf"
+                href="https://drive.google.com/file/d/1lDvS55x5OTwMmRSnQ8FMjE_OWJS-Pf7t/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="download-button"

@@ -86,9 +86,11 @@ const ProblemSolving = () => {
               <div className="line"></div>
               <div className="line"></div>
               <p>
-                Solve 23300 Problems
+                Solve Problems
                 <br />
-                Ranked 34th in contests
+                Perticipate contests
+                <br />
+                Increament Accuracy is (-_-)
               </p>
               <div className="line"></div>
             </div>

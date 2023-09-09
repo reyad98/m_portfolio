@@ -1,4 +1,5 @@
 import React from "react";
+import img4 from "../images/food2.jpg";
 import img3 from "../images/grap1.jpg";
 import img2 from "../images/img4.jpg";
 import img1 from "../images/photo1.jpg";
@@ -6,24 +7,24 @@ import "./Gallery.css"; // Your provided CSS
 
 const cardsData = [
   {
-    title: "Canyons",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=",
+    title: "Food Hood",
+    content: "Fixd a meeting, Meet an Eat with cill and lox",
+    imageUrl: img4,
   },
   {
-    title: "Beaches",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    title: "Cill Cillox",
+    content: "Never Entered here or Enter for Photograpy",
     imageUrl: img1,
   },
   {
-    title: "Trees",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    title: "Unofficial",
+    content: "Unofficial with jobless tag is better then use lorem10",
     imageUrl: img2,
   },
   {
-    title: "Lakes",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    title: "Lets Play",
+    content:
+      "making it more than just a game, but rather a shared experience of joy",
     imageUrl: img3,
   },
 ];
@@ -44,7 +45,9 @@ const Gallery = () => {
                 <div className="card__content">
                   <div className="card__title">{card.title}</div>
                   <p className="card__text">{card.content}</p>
-                  <button className="btn btn--block card__btn">Button</button>
+                  <button className="btn btn--block card__btn">
+                    Not a Button
+                  </button>
                 </div>
               </div>
             </li>

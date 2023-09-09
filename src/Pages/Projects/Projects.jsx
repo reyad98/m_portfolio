@@ -13,27 +13,30 @@ const Projects = ({ limit }) => {
       id: 1,
       image: project1, // Replace with actual image source
       date: "June 2022",
-      title: "Project 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      technology: "React, Node.js, MongoDB",
+      title: "Coding Academy",
+      description:
+        "Coding Academy is an advanced educational platform built using the MERN (MongoDB, Express.js, React, and Node.js) stack. It serves as a comprehensive hub for students, teachers, and educational institutions to access, share, and manage coding-related content with ease. The platform offers user authentication, course management, curriculum tracking, a discussion forum, and a feature-rich admin panel for streamlined operations.",
+      technology: "React, Node.js, Express.js, MongoDB",
     },
     {
       id: 2,
       image: project3, // Replace with actual image source
       date: "July 2022",
-      title: "Project 2",
+      title: "Memories",
       description:
-        "Pellentesque  5656 ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus cursus luctus. lorem20  Pellentesque ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus Pellentesque ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus Pellentesque ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus Pellentesque tyty ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus ",
-      technology: "Angular, Express.js, PostgreSQL",
+        "Memories is a dynamic and user-friendly blogging website designed to empower individuals to share their thoughts and experiences with the world. With user registration and profile creation, it provides an intuitive platform for users to write, edit, and delete their blogs. A recommendation system suggests related content, and a commenting system fosters user interaction and engagement.",
+      technology: "React, Node.js, Express.js, MySQL",
     },
     {
       id: 3,
       image: project4, // Replace with actual image source
       date: "June 2022",
-      title: "Project 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      technology: "React, Node.js, MongoDB",
+      title: "CodeGen",
+      description:
+        "CodeGen is a specialized programming website dedicated to providing programming enthusiasts with an accessible platform for honing their competitive programming skills. The platform offers user profiles with solving counts, a problem archive, solution submissions, and discussion forums for a thriving programming community. It encourages users to learn, practice, and collaborate in their journey toward becoming accomplished programmers.",
+      technology: "React, Node.js, Express.js, MongoDB",
     },
+
     {
       id: 4,
       image: project2, // Replace with actual image source
@@ -41,7 +44,7 @@ const Projects = ({ limit }) => {
       title: "Project 2",
       description:
         "Pellentesque  5656 ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus cursus luctus. lorem20  Pellentesque ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus Pellentesque ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus Pellentesque ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus Pellentesque tyty ac ipsum eget lectus cursus luctus. lorem20 Pellentesque ac ipsum eget lectus ",
-      technology: "Angular, Express.js, PostgreSQL",
+      technology: "React, Node.js, Express.js, Mysql",
     },
     // Add more project objects as needed
   ];
