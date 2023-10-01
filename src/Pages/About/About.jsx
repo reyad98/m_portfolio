@@ -90,7 +90,12 @@ const About = () => {
         </div>
 
         <div className="download-content">
-          <Link to="link_to_resume.pdf" className="download-item">
+          <Link
+            to="https://drive.google.com/file/d/1lDvS55x5OTwMmRSnQ8FMjE_OWJS-Pf7t/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="download-item"
+          >
             <div className="icon-bg">
               <FaDownload className="download-icon" />
             </div>

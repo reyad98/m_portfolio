@@ -11,7 +11,7 @@ html {
   align-items: center;
   justify-content: center;
   padding: 70px 0;
-  background-color: #111;
+  background-color: #033435;
   margin-top: 70px;
 }
 
@@ -30,7 +30,7 @@ html {
 
 .timeline ul li {
   padding: 10px;
-  background-color: #1e1f22;
+  background-color: #38d2c5;
   color: white;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -44,14 +44,16 @@ html {
 .timeline-content h1 {
   font-weight: 500;
   font-size: 25px;
-  line-height: 30px;
+  line-height: 26px;
   margin-bottom: 5px;
+  color: #033435;
 }
 
 .timeline-content p {
   font-size: 15px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
+  color: #033435;
 }
 
 .timeline-content .date {
@@ -119,6 +121,6 @@ html {
   }
 
   .timeline ul li:hover::before {
-    background-color: rgb(124, 255, 117);
+    background-color: rgb(117, 255, 207);
   }
 }

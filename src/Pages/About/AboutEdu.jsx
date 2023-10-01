@@ -32,7 +32,7 @@ const educationData = [
   {
     exam: "BSc in CSE",
     institution: "Daffodil International University",
-    cgpa: "3.60", // Add your BSc CGPA here
+    cgpa: "3.54", // Add your BSc CGPA here
     year: "2023",
     description:
       "Pursued a degree in Computer Science and Engineering with dedication.",
@@ -57,13 +57,15 @@ const AboutEdu = () => {
                     <br />
                     Attended: {data.institution}
                     <br />
-                    {data.gpa && (
-                      <span>
-                        GPA: {data.gpa}
-                        <br />
-                      </span>
-                    )}
-                    {data.cgpa && <span>CGPA: {data.cgpa}</span>}
+                    <b>
+                      {data.gpa && (
+                        <span>
+                          GPA: {data.gpa}
+                          <br />
+                        </span>
+                      )}
+                    </b>
+                    <b>{data.cgpa && <span>CGPA: {data.cgpa}</span>}</b>
                   </p>
                 </div>
               </div>

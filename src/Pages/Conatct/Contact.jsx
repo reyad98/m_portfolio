@@ -25,7 +25,7 @@ const Contact = () => {
                 <span>TOUCH</span>
               </div>
               <div className="app-contact">
-                CONTACT INFO : +880 13 176 000 166
+                CONTACT INFO : +880 13 176 00 166
               </div>
             </div>
             <div className="screen-body-item">

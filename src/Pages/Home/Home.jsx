@@ -53,14 +53,16 @@ const Home = () => {
             </div>
             <div className="about">
               <p>
-                I'm a passionate software engineer with a focus on creating
-                user-centric web applications. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. I'm a passionate software engineer
-                with a focus on creating user-centric web applications. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. I'm a
-                passionate software engineer with a focus on creating
-                user-centric web applications. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.ing elit.
+                "Hello! I'm Anisur Rahman. I've graduated in Computer Science
+                and Engineering from Daffodil International University. I enjoy
+                solving problems and creating cool websites. Teaching is
+                something I'm really interested in. Currently, I'm living in
+                Dhaka for my studies and work. Apart from coding, I love
+                exploring the beauty of the world. Whether it's traveling with
+                friends, taking pictures of nature, or sharing my adventures in
+                videos. As I move forward, I'm eagerly waiting for my 'halal
+                rizq' and doing my best in all that I do. Let's see where this
+                journey takes me!"
               </p>
             </div>
             <div className="download">
