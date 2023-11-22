@@ -91,7 +91,7 @@ const About = () => {
 
         <div className="download-content">
           <Link
-            to="https://drive.google.com/file/d/1lDvS55x5OTwMmRSnQ8FMjE_OWJS-Pf7t/view?usp=sharing"
+            to="https://drive.google.com/file/d/1YdvZlCZcyuZ9AbFy30bw0Uu_i61YBWXn/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="download-item"
@@ -101,7 +101,10 @@ const About = () => {
             </div>
             <div className="item-text">Download Resume</div>
           </Link>
-          <Link to="link_to_cv.pdf" className="download-item">
+          <Link
+            to="https://drive.google.com/file/d/1A1sXxgYulVvNa4BZpDWXlaZzZ9ufzbk1/view?usp=sharing"
+            className="download-item"
+          >
             <div className="icon-bg">
               <FaDownload className="download-icon" />
             </div>
