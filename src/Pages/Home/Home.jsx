@@ -67,7 +67,7 @@ const Home = () => {
             </div>
             <div className="download">
               <a
-                href="https://drive.google.com/file/d/1lDvS55x5OTwMmRSnQ8FMjE_OWJS-Pf7t/view?usp=sharing"
+                href="https://drive.google.com/file/d/1YdvZlCZcyuZ9AbFy30bw0Uu_i61YBWXn/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="download-button"
