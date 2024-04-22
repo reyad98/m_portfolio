@@ -49,7 +49,7 @@ const Home = () => {
           <div className="left-box">
             <div className="name-designation">
               <h1 className="typing-effect">{typing}</h1>
-              <h3>Software Engineer</h3>
+              <h3>Competitive Programmer & Developer </h3>
             </div>
             <div className="about">
               <p>
