@@ -19,9 +19,9 @@ import Skills from "./Skills";
 const Home = () => {
   const [typing, setTyping] = useState("");
   const socialMedia = [
-    { icon: <FaFacebook />, link: "https://www.facebook.com/yourusername" },
-    { icon: <FaGithub />, link: "https://github.com/yourusername" },
-    { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/yourusername" },
+    { icon: <FaFacebook />, link: "https://www.facebook.com/profile.php?id=100008367510048" },
+    { icon: <FaGithub />, link: "https://github.com/reyad98" },
+    { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/anisur-rahman98" },
     { icon: <FaYoutube />, link: "https://www.youtube.com/user/yourusername" },
   ];
 
