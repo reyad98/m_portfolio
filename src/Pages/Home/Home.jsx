@@ -11,7 +11,7 @@ import Contact from "../Conatct/Contact";
 import Education from "../Education/Education";
 import Gallery from "../Gallery/Gallery";
 import Projects from "../Projects/Projects";
-import img1 from "../images/img1.jpg";
+import img1 from "../images/WhatsApp Image 2026-04-24 at 10.11.37.jpeg";
 import "./Home.css";
 import ProblemSolving from "./ProblemSolving";
 import Skills from "./Skills";
@@ -49,20 +49,13 @@ const Home = () => {
           <div className="left-box">
             <div className="name-designation">
               <h1 className="typing-effect">{typing}</h1>
-              <h3>Competitive Programmer & Developer </h3>
+              <h3>Lecturer & Competitive Programmer </h3>
             </div>
             <div className="about">
               <p>
-                "Hello! I'm Anisur Rahman. I've graduated in Computer Science
-                and Engineering from Daffodil International University. I enjoy
-                solving problems and creating cool websites. Teaching is
-                something I'm really interested in. Currently, I'm living in
-                Dhaka for my studies and work. Apart from coding, I love
-                exploring the beauty of the world. Whether it's traveling with
-                friends, taking pictures of nature, or sharing my adventures in
-                videos. As I move forward, I'm eagerly waiting for my 'halal
-                rizq' and doing my best in all that I do. Let's see where this
-                journey takes me!"
+                "Hello! I'm Anisur Rahman. I completed my B.sc in Computer Science and Engineering from Daffodil International University. Currently, I am working as an <b>ICT Lecturer</b> at <b>KFT Collegiate School</b>, where I teach students, share practical knowledge, and help them build skills in technology and digital learning.
+
+I enjoy solving problems, creating modern websites, and exploring new technologies. Teaching is one of my passions, and I always try to make learning simple, engaging, and effective for my students."
               </p>
             </div>
             <div className="download">
